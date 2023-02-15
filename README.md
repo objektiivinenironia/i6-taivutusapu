@@ -36,11 +36,11 @@ Kun halutaan tuottaa taivutusohje tietyn mallin mukaan, voidaan lisätä taivutu
 
 Apuohjelmassa hyödynnetään Kotimaisten kielten keskuksen sanalistan *muokattua* versiota (listasta on poistettu mm. verbit).
 Mukana on myös sanalistan kuvaus samasta lähteestä.
-Alkuperäinen kotus-sanalista, sanalistan kuvaus ja niiden käyttöehdot löytyvät täältä:
+Alkuperäiset kotus-sanalista, sanalistan kuvaus ja niiden käyttöehdot löytyvät täältä:
 
 <https://kaino.kotus.fi/sanat/nykysuomi/>
 
-Tämän apuohjelma käyttää samoja ehtoja ja on (c) Jack Zyrp 2021-2023.
+Tämän apuohjelma käyttää samoja ehtoja ja on (c) Jack E. Zyrp 2021-2023.
 
 GNU LGPL (Lesser General Public License), EUPL v.1.1 (Euroopan unionin yleinen lisenssi) ja CC Nimeä 3.0.
 
