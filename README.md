@@ -1,14 +1,13 @@
 # Apuohjelma taivutusten tulostamiseen
 *Ad hoc nominien taivutusapu Inform 6-ohjelmalle (Python3-skripti ja muokattu Kotus-sanalista)*
 
-Apuohjelma hakee sanalistasta lähimmän vastaavuuden ja yrittää tuottaa ohjeet Inform-6 ohjelmalle taivutuksista *genetiivi, partitiivi, essiivi ja illatiivi* (monikossa myös *inessiivi*). Taivutusohjeet tarvitaan suomenkieliseen Inform 6-kotoistuksen taivutusten tulostamiseen.
+Apuohjelma hakee sanalistasta lähimmän vastaavuuden ja yrittää tuottaa ohjeet joita tarvitaan Inform 6-kotoistuksen taivutusten tulostamiseen.
 
-Ohjelmaan syötetään nomini(t) yksikössä perusmuodossa (nominatiivi).
+Ohjelmalle annetaan syöte yksikössä ja perusmuodossa.
 
 ```
 > python3 tee.py "spede" 
 ````
-
 
 Monikko tulostetaan valitsimella -m. 
 
@@ -35,8 +34,8 @@ Kun halutaan tuottaa taivutusohje tietyn mallin mukaan, voidaan lisätä taivutu
  gen "jen", par "jä", ess "inä", ill "ihin", ine "issä",
 ```
 
-Apuohjelmassa hyödynnetään Kotimaisten kielten keskuksen sanalistasta muokattua versiota. Listasta on poistettu mm. verbit.
-Mukana on myös *sanalistan-kuvaus*.
+Apuohjelmassa hyödynnetään Kotimaisten kielten keskuksen sanalistan *muokattua* versiota (listasta on poistettu mm. verbit).
+Mukana on myös sanalistan kuvaus samasta lähteestä.
 Alkuperäinen kotus-sanalista, sanalistan kuvaus ja niiden käyttöehdot löytyvät täältä:
 
 <https://kaino.kotus.fi/sanat/nykysuomi/>
