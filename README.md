@@ -21,6 +21,7 @@ TODO: syötteen kelpoutus.
 
 Valitsin -e kytkee vertailevan haun pois jolloin haku ohittaa merkkejä kunnes loppuosa täsmää (detrimentaalinen haku). 
 
+
 Kun halutaan tuottaa taivutusohje tietyn mallin mukaan, voidaan lisätä taivutusnumero (Kotus-luokka) syötteeseen. Esimerkiksi kun tiedetään ettei "Spede" taivu kuin "hede" (48 F), vaan kuin mallisana "nalle" (8), annetaan syöte "Spede8" ja saadaan haluttu taivutusohje.
 
 ```
@@ -33,6 +34,8 @@ Kun halutaan tuottaa taivutusohje tietyn mallin mukaan, voidaan lisätä taivutu
 "spede/t",
  gen "jen", par "jä", ess "inä", ill "ihin", ine "issä",
 ```
+
+Vinkki: jos esimerkiksi pitkä yhdyssana ei tunnu antavan oikeaa taivutusta, voi kokeilla sanan loppuosan syöttämistä ja alkuosan lisäämistä suoraan taivutusohjeeseen.
 
 Apuohjelmassa hyödynnetään Kotimaisten kielten keskuksen sanalistan *muokattua* versiota (listasta on poistettu mm. verbit).
 Mukana on myös sanalistan kuvaus samasta lähteestä.
