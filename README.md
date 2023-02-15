@@ -1,50 +1,34 @@
-# Tulostusapu (Inform 6 nominien taivutuksen tulostusohjeen kehitin)
+# Apuohjelma taivutusten tulostamiseen
+*Python-skripti ja ad hoc Kotus-sanalista nominien taivutusohjeiden tuottamiseen Inform 6-ohjelmalle*
 
-_Apuohjelma nominien taivutusohjeiden tulostamiseen inform 6/11-kirjaston kotoistukselle_
+Apuohjelma hakee sanalistasta lähimmän vastaavuuden ja yrittää tuottaa ohjeet Inform-6 ohjelmalle taivutuksista *genetiivi, partitiivi, essiivi ja illatiivi* (monikossa myös *inessiivi*). Taivutusohjeet tarvitaan suomenkieliseen Inform 6-ohjelmaan jotta se tulostaa taivutuksia.
 
-Inform 6/11 tarvitsee ohjeita kun tulostetaan nominien taivutuksia.
-Taivutusohjeet voi yrittää tulostaa tällä apuohjelmalla.
-Python3-skripti. 
-Käyttää näitä: xml.etree.ElementTree, sys, argparse, re ja difflib.
-Lisäksi mukana on kotus-sanalista_lyh.xml ja sanalistan-kuvaus.txt 
-Sanalista on karsittu versio Kotimaisten kielten tutkimuskeskuksen sanalistasta v:lta 2006.
-Alkuperäiset löytyvät täältä:
+   - Python riippuvuudet: xml.etree.ElementTree, sys, argparse, re ja difflib.
 
-
-Sanalistassa ei ole verbejä, erisnimiä, fantasiasanoja (keksittyjä tai muuten) ohjelma antaa ehdotuksen samankaltaisen sanan perusteella.
-
-Kun sanaa ei löydy listasta, difflib etsii samankaltaisia sanoja ja antaa yhden ehdotuksen. Jos se ei tunnu antavan oikeaa taivutusta, valitsin -e kytkee difflibin pois jolloin haku ohittaa merkkejä kunnes loppuosa täsmää (detrimentaalinen haku). 
-
-Pienet kirjaimet todennäköisimmin täsmää koska listassa ei ole erisnimiä, mutta listassa on joitain yleisiä lyhenteitä isoilla kirjaimilla.
-
-TODO: valitsin jolla ohitetaan kirjainkoko haussa. 
-
-Esimerkiksi kuvitteellinen hahmo nimeltä Jack Zyrp:
-
-python3 tee.py "Zyrp"
-
- Zyrpin
- Zyrpiä
- Zyrpinä
- Zyrpiin
-
- "Zyrp/",
-  gen "in", par "iä", ess "inä", ill "iin",
-
-Täydennät vain "Jack", jos et halua etunimeä taivutettavan.
- 
-"Jack Zyrp/",
+Ohjelmaan syötetään nomini(t) yksikössä perusmuodossa (nominatiivi)
 
 Monikko tulostetaan valitsimella -m. 
 
-Puute: yksikkö ja monikko ei voi tulostaa samaan nimestä. Tätä kirjoitettaessa sitä ei voi tehdä Inform 6 kotoistuksessakaan.
+Puute: yksikköä ja monikkoa ei voi tulostaa samasta nimestä. Sitä ei voi tehdä Inform 6 kotoistuksessakaan ("nakki ja muusi" tai "nakit ja  muusit" muttei "nakit ja muusi")
 
-Kaikki ei tulostu automaattisesti oikein.
-jos apuohjelma tulostaa taivutusohjeen  väärin, voi antaa taivutusnumeron (ja tarvittaessa astevaihtelua merkitsevän kirjaimen) syötteen loppuun, esim. tn 5 on melko yleinen kun taivutetaan vierasperäisiä nomineja.
+Koska sanalistassa ei ole erisnimiä pienet kirjaimet todennäköisimmin täsmää, mutta listassa on joitain yleisiä lyhenteitä isoilla kirjaimilla.
 
-Esimerkiksi "Spede" ei taivu ohjelmalla niinkuin toivoisi (taivuttaa "hede" mukaan). Ongelma voidaan ratkaista muokkaamalla taivutusohjetta suoraan
+TODO: valitsin jolla pien- ja suuraakkosten ero ohitetaan haussa.
 
-"Spede/",
- gen "n", par "ä", ess "nä", ill "en",
+TODO: syötteen kelpoutus.
 
-...tai kun tiedetään että Spede taipuu kuin mallisana "nalle" (tn 8), voidaan syöttää "Spede8" tai jopa lisätä Spede sanalistaan.
+Valitsin -e kytkee vertailevan haun pois jolloin haku ohittaa merkkejä kunnes loppuosa täsmää (detrimentaalinen haku). 
+
+Kun halutaan tuottaa taivutusohje tietyn mallin mukaan, voidaan lisätä taivutusnumero (Kotus-luokka) syötteeseen. Esimerkiksi kun tiedetään että erisnimi "Spede" ei taivu kuin "hede" (48 F) vaan kuin mallisana "nalle" (8), annetaan syöte "Spede8", jolloin saadaan haluttu taivutusohje.
+
+```
+ spedejen
+ spedejä
+ spedeinä
+ spedeihin
+ spedeissä
+
+"spede/t",
+ gen "jen", par "jä", ess "inä", ill "ihin", ine "issä",
+```
+
