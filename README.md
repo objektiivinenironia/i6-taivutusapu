@@ -3,7 +3,7 @@
 
 Apuohjelma hakee sanalistasta lähimmän vastaavuuden ja yrittää tuottaa ohjeet joita tarvitaan Inform 6-kotoistuksen taivutusten tulostamiseen.
 
-Ohjelmalle annetaan syöte yksikössä ja perusmuodossa.
+Ohjelmalle annetaan syöte yksikön perusmuodossa tähän tapaan:
 
 ```
 > python3 tee.py "spede" 
