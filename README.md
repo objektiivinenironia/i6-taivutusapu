@@ -40,7 +40,7 @@ Alkuperäiset kotus-sanalista, sanalistan kuvaus ja niiden käyttöehdot löytyv
 
 <https://kaino.kotus.fi/sanat/nykysuomi/>
 
-Tämän apuohjelma käyttää samoja ehtoja ja on (c) Jack E. Zyrp 2021-2023.
+Tämä apuohjelma käyttää samoja ehtoja ja on (c) J. E. Zyrp 2021-2023.
 
 GNU LGPL (Lesser General Public License), EUPL v.1.1 (Euroopan unionin yleinen lisenssi) ja CC Nimeä 3.0.
 
