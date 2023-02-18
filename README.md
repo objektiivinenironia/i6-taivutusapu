@@ -1,7 +1,7 @@
 # Apuohjelma taivutusten tulostamiseen
 *Ad hoc nominien taivutusapu Inform 6-ohjelmalle (Python3-skripti ja muokattu Kotus-sanalista)*
 
-Apuohjelma hakee sanalistasta lähimmän vastaavuuden ja yrittää tuottaa ohjeet joita tarvitaan Inform 6-kotoistuksen taivutusten tulostamiseen.
+Apuohjelma hakee sanalistasta lähimmän vastaavuuden ja yrittää tuottaa ohjeet joita tarvitaan taivutusten tulostamiseen Inform 6-kotoistuksessa.
 
 Ohjelmalle annetaan syöte yksikön perusmuodossa tähän tapaan:
 
@@ -43,7 +43,7 @@ Alkuperäiset kotus-sanalista, sanalistan kuvaus ja niiden käyttöehdot löytyv
 
 <https://kaino.kotus.fi/sanat/nykysuomi/>
 
-Tämä apuohjelma käyttää samoja ehtoja ja on (c) J. E. Zyrp 2021-2023.
+Tämä apuohjelma käyttää samoja ehtoja ja on (c) Peppe von Peppe 2021-2023.
 
 GNU LGPL (Lesser General Public License), EUPL v.1.1 (Euroopan unionin yleinen lisenssi) ja CC Nimeä 3.0.
 
