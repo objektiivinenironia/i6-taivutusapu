@@ -37,7 +37,7 @@ Kun halutaan tuottaa taivutusohje tietyn mallin mukaan, voidaan lisätä taivutu
 
 Vinkki: jos esimerkiksi pitkä yhdyssana ei tunnu antavan oikeaa taivutusta, voi kokeilla sanan loppuosan syöttämistä ja alkuosan lisäämistä suoraan taivutusohjeeseen.
 
-Apuohjelmassa hyödynnetään Kotimaisten kielten keskuksen sanalistan *muokattua* versiota (listasta on poistettu mm. verbit).
+Huom! Kotus-sanalista on *muokattu* versio (listasta on poistettu mm. verbit).
 Mukana on myös sanalistan kuvaus samasta lähteestä.
 Alkuperäiset kotus-sanalista, sanalistan kuvaus ja niiden käyttöehdot löytyvät täältä:
 
