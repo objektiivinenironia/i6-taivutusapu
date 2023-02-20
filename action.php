@@ -6,7 +6,7 @@
 $input=$_POST['in'];
 $mon=$_POST['mon'];
 
-if (isset($mon)) $command = 'python3 uusi.py -r -m "' . $input . '"';
+if (isset($mon)) $command = 'python3 tee.py -r -m "' . $input . '"';
 
 else $command = 'python3 tee.py -r "' . $input . '"';
 $python = `$command`;
