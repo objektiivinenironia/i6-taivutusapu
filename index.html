@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<html lang="fi">
+<meta charset="utf-8">
+<head>
+<title>i6-taivutusapu</title>
+<style>
+body {
+    background-color: #fff;
+    
+}
+img {
+    margin-right: 16px;
+    margin-bottom: 16px;
+    float: left;
+    background-color: #fff;
+}
+hr {
+    clear: both;
+}
+</style>
+</head>
+<body>
+<h2>i6-taivutusapu</h2>
+<p>
+Apuohjelma nominien taivuttamiseen Inform 6-ohjelmissa (Python3-skripti ja muokattu Kotus-sanalista).
+<br>
+Ohjelmalle annetaan syöte yksikössä ja perusmuodossa.
+<p>
+Hakee sanalistasta lähimmän vastaavuuden ja yrittää tuottaa ohjeet joita tarvitaan taivutusten tulostamiseen.
+<br>
+Monikko tulostetaan valitsimella -m. 
+<br>
+[HAKUKENTTÄ kesken koska se pitänee kelpouttaa]
+<!--
+<form method="post" action="action.php">
+<input type="text" name="in" id="input"<br>
+<input type="submit" name="sub" value="Hae"/>
+</br>
+<input type="checkbox" name="mon" value="monikko"/>monikko                                    
+</form>
+-->
+<p>
+Puute: yksikköä ja monikkoa ei voi tulostaa samasta nimestä (sitä ei voi tehdä Inform 6 kotoistuksessaan).
+</p>
+Koska sanalistassa ei ole erisnimiä pienet kirjaimet todennäköisimmin täsmää, mutta listassa on joitain yleisiä lyhenteitä isoilla kirjaimilla.
+<p>
+TODO: valitsin jolla pien- ja suuraakkosten ero ohitetaan haussa.
+<br>
+TODO: syötteen kelpoutus.
+<br>
+</p>
+<p>
+Kun halutaan tuottaa taivutusohje tietyn mallin mukaan, voidaan lisätä taivutusnumero (Kotus-luokka) ja sen jälkeen astevaihtelua merkitsevä kirjain syötteeseen.
+<!-- + esim, ks sanalistan kuvaus-->
+<br>
+Vinkki: jos esimerkiksi pitkä yhdyssana ei tunnu antavan oikeaa taivutusta, voi kokeilla sanan loppuosan syöttämistä ja alkuosan lisäämistä suoraan taivutusohjeeseen.
+<p>
+Github
+<br>
+<a href="https://github.com/objektiivinenironia/i6-taivutusapu"> https://github.com/objektiivinenironia/i6-taivutusapu</a>
+<p/>
+<hr>
+Huom! Kotus-sanalista on muokattu versio (listasta on poistettu mm. verbit). Mukana on myös sanalistan kuvaus samasta lähteestä. Alkuperäinen kotus-sanalista, sanalistan kuvaus ja niiden käyttöehdot löytyvät täältä:
+<br>
+<a href="https://kaino.kotus.fi/sanat/nykysuomi/"> https://kaino.kotus.fi/sanat/nykysuomi/</a>
+<br>
+Tämä apuohjelma käyttää samoja ehtoja ja on (c) Peppe von Peppe 2021-2023.
+<br>
+GNU LGPL (Lesser General Public License), EUPL v.1.1 (Euroopan unionin yleinen lisenssi) ja CC Nimeä 3.0.
+</body>
+</html>
